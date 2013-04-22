@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <CheckBoxPreference
+        android:id="@+id/ciao"
+		android:title="Checkbox Preference"
+		android:defaultValue="false"
+		android:summary="This preference can be true or false"
+		android:key="checkboxPref" />
+	
+</PreferenceScreen>

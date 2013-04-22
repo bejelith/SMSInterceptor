@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<PreferenceCategory
+		android:summary="General Settings"
+		android:title="General Settings" >
+		<EditTextPreference
+			android:key="matchstring"
+			android:summary="Insert string to match"
+			android:title="Match String" />
+		<CheckBoxPreference 
+		    android:key="ison"
+		    android:summary="On/Off"
+		    android:title="Intercept"/>
+		<EditTextPreference 
+		    android:key="changeto"
+		    android:summary="Number to set"
+		    android:title="Change sender numer with"
+		    android:defaultValue=""
+		    />
+		<RingtonePreference 
+		    android:key="sound"
+		    android:summary="Ringtone"
+		    android:showSilent="true"
+		    android:showDefault="true"
+		    android:defaultValue=""
+		    android:ringtoneType="notification"/>
+	</PreferenceCategory>
+</PreferenceScreen>

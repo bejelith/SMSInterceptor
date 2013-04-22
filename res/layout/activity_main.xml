@@ -1,0 +1,40 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+ 
+      
+	<TextView android:id="@+id/testo" 
+	android:text="TESTO_test"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:background="#0000ff"
+	/>
+       
+	<EditText
+		android:id="@+id/edit_message"
+		android:layout_weight="1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:hint="@string/edit_message" 
+		 
+		android:background="#00ffff"
+	/>
+      
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/button_send" android:onClick="sendMessage" 
+	/>
+	
+
+	<fragment
+	    android:id="@+id/bottom_fragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    class="com.example.app1.BottomFragment"
+ 	/>
+      
+</LinearLayout>
